@@ -1,4 +1,3 @@
-//iPhone 6尺寸作为设计稿基准
 $vw_base: 375; 
 @function vw($px) {
     @return ($px / 375) * 100vw;
@@ -53,14 +52,6 @@ body {
     position: absolute;
     top: vw(16);
     left: vw(16);
-    // span {
-    //     display: block;
-    //     width: 100%;
-    //     height: vw(4);
-    //     margin-top: vw(10);
-    //     background: #000;
-    //     &:first-of-type {margin-top: 0}
-    // }
     span {
         display: block;
         width: vw(28);
@@ -147,31 +138,6 @@ body {
             word-break: break-all;
             padding-right: vw(6);
         }
-        /* span {
-            display: flex;
-            width: vw(16);
-            height: vw(16);
-            position: relative;
-            &::before, &::after {
-                content: '';
-                display: block;
-                width: 100%;
-                height: vw(2);
-                background: #333;
-                transform-origin: 0 0;
-                position: absolute;
-            }
-            &::before {
-                transform: rotate(45deg);
-                top: 15%;
-                right: -10%;
-            }
-            &::after {
-                transform: rotate(-45deg);
-                bottom: 0;
-                // right: 5%;
-            }
-        } */
         .opts {
             display: flex;
             width: vw(26);
