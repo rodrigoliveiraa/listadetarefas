@@ -4,7 +4,6 @@
       <input type="text" placeholder="add new" v-model="newTodoText" required>
       <button class="ipt-btn" @click="addTodo">add</button>
     </div>
-    <!-- 子组件 -->
     <CommonList ref='sonC' :todoTxt="newTodoText"></CommonList>
   </div>
 </template>
